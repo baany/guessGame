@@ -1,6 +1,8 @@
 import random
+from tinydb import TinyDB, Query
 
 movieList = ['Jajantram Mamantram','Mughal-e-Azam','Dil to Pagal Hai', 'Aashiqui']
+#db = TinyDB('db.json')
 movieRandom = random.choice(movieList)
 mediaM = movieRandom.lower()
 media = list(mediaM)
