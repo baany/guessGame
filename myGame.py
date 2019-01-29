@@ -1,9 +1,12 @@
 import random
-from tinydb import TinyDB, Query
+#from tinydb import TinyDB, Query
+from retrieveMovieDict import getMovieFromDict
 
-movieList = ['Jajantram Mamantram','Mughal-e-Azam','Dil to Pagal Hai', 'Aashiqui']
 #db = TinyDB('db.json')
-movieRandom = random.choice(movieList)
+
+#movieList = ['Jajantram Mamantram','Mughal-e-Azam','Dil to Pagal Hai', 'Aashiqui']
+#movieRandom = random.choice(movieList)
+movieRandom = getMovieFromDict()
 mediaM = movieRandom.lower()
 media = list(mediaM)
 #print (media)
