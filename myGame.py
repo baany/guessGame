@@ -1,15 +1,11 @@
 import random
-#from tinydb import TinyDB, Query
 from retrieveMovieDict import getMovieFromDict
-
-#db = TinyDB('db.json')
 
 #movieList = ['Jajantram Mamantram','Mughal-e-Azam','Dil to Pagal Hai', 'Aashiqui']
 #movieRandom = random.choice(movieList)
 movieRandom = getMovieFromDict()
 mediaM = movieRandom.lower()
 media = list(mediaM)
-#print (media)
 
 guessMedia = ''
 lengMedia = len(media)
@@ -44,7 +40,6 @@ while(attempts!=0):
     print ('\n')
     print ("Attempts : ",attempts)
     print (guessMedia)
-    #print (mediaM)
     if (guessMedia == mediaM.lower() and attempts!=0):
         print ("You Won!!")
         break
